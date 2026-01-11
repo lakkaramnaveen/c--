@@ -2,10 +2,13 @@
 
 int main(){
 
-    int a;
-    a = 5;
-    int b = 10;
+    int x = 42;
+    int y = 58;
+    int sum = x + y;
 
-    std::cout << "Sum of " << a << " and " << b << " is: " << (a + b) << std::endl;
-    return a+b;
+    std::cout << x << '\n';
+    std::cout << y << '\n';
+    std::cout << "Sum: " << sum << '\n';
+    
+    return 0;
 }
