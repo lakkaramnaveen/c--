@@ -2,13 +2,21 @@
 
 int main(){
 
-    int x = 42;
-    int y = 58;
-    int sum = x + y;
+    int age = 25;
+    int year = 2024;
+    float days = 7.5;
+    double pi = 3.14159;
+    char grade = 'A';
+    bool isStudent = false;
+    std::string name = "Alice";
 
-    std::cout << x << '\n';
-    std::cout << y << '\n';
-    std::cout << "Sum: " << sum << '\n';
-    
+    std::cout << "Name: " << name << std::endl;
+    std::cout << "Age: " << age << std::endl;
+    std::cout << "Year: " << year << std::endl;
+    std::cout << "Days: " << days << std::endl;
+    std::cout << "Pi: " << pi << std::endl;
+    std::cout << "Grade: " << grade << std::endl;
+    std::cout << "Is Student: " << isStudent << std::endl;
+
     return 0;
 }
