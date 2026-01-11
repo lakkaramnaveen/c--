@@ -2,13 +2,10 @@
 
 int main(){
 
-    // Print Hello, World! to the console
+    int a;
+    a = 5;
+    int b = 10;
 
-    /*
-        This is a multi-line comment.
-        The following line prints a greeting message.
-    */
-    std::cout << "I love biryani!" << std::endl;
-    std::cout << "How are you doing today!";
-    return 0;
+    std::cout << "Sum of " << a << " and " << b << " is: " << (a + b) << std::endl;
+    return a+b;
 }
