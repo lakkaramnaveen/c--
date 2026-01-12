@@ -1,26 +1,24 @@
 #include <iostream>
 
 int main(){
+    // pointer to a constant character array
+    const char* message = "Hello, World!";
 
-    int age = 25;
-    int year = 2024;
-    float days = 7.5;
-    double pi = 3.14159;
-    char grade = 'A';
+    double radius = 5.0;
+    const double pi = 3.14159;
+    // pi = 2323.123; // This line will cause a compilation error
+    double circumference = 2 * pi * radius;
+    std::cout << circumference << std::endl;
 
-    char currency = '$';
 
-    
-    bool isStudent = false;
-    std::string name = "Alice";
+    const int LightSpeed = 299792458; // in meters per second
+    std::cout << "Light speed is " << LightSpeed << " m/s" << std::endl;
 
-    std::cout << "Name: " << name << std::endl;
-    std::cout << "Age: " << age << std::endl;
-    std::cout << "Year: " << year << std::endl;
-    std::cout << "Days: " << days << std::endl;
-    std::cout << "Pi: " << pi << std::endl;
-    std::cout << "Grade: " << grade << std::endl;
-    std::cout << "Is Student: " << isStudent << std::endl;
+    const int WIDTH = 800;
+    const int HEIGHT = 600;
+
+    std::cout << message << std::endl;
+    std::cout << "Screen Width: " << WIDTH << ", Height: " << HEIGHT << std::endl;
 
     return 0;
 }
