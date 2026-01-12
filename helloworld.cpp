@@ -7,6 +7,10 @@ int main(){
     float days = 7.5;
     double pi = 3.14159;
     char grade = 'A';
+
+    char currency = '$';
+
+    
     bool isStudent = false;
     std::string name = "Alice";
 
