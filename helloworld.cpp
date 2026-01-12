@@ -9,9 +9,9 @@ using text_t = std::string;
 using number_t = int;
 
 int main() {
-    int a = (int)3.21;
-    char x = 100;
-    std::cout << x << std::endl;
-    std::cout << a << std::endl;
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+    std::cout << "Hello, " << name << "!" << std::endl;
     return 0;
 }
