@@ -9,19 +9,9 @@ using text_t = std::string;
 using number_t = int;
 
 int main() {
-    text_t greeting = "Hello, World!";
-    number_t year = 2024;
-    std::cout << greeting << " The year is " << year << "." << std::endl;
-
-    year++;
-    year+=1;
-    year--;
-    year-=1;
-    year*=1;
-    year/=1;
-    year%=1;
-    year += 2024;
-    std::cout << "Next year will be " << year + 1 << "." << std::endl;
-
+    int a = (int)3.21;
+    char x = 100;
+    std::cout << x << std::endl;
+    std::cout << a << std::endl;
     return 0;
 }
