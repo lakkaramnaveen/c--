@@ -1,20 +1,14 @@
 #include <iostream>
+#include <vector>
 
-namespace first {
-    int x = 10;
-}
+// custom type definition for a vector of pairs (string, int)
+typedef std::vector<std::pair<std::string, int>> StringIntPairList;
 
-namespace second {
-    int x = 20; 
-}
+int main() {
 
-int main(){
-    using namespace std;
-
-    int x = 0;
-
-    cout << first::x << endl;  // Outputs 10
-    cout << second::x << endl; // Outputs 20
-    cout << x << endl;         // Outputs 0
+    StringIntPairList list = { {"apple", 1}, {"banana", 2}, {"cherry", 3} };
+    for (const auto& item : list) {
+        std::cout << "Fruit: " << item.first << ", Quantity: " << item.second << std::endl;
+    }
     return 0;
 }
